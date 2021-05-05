@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang Man</title>
+    <link rel="stylesheet" href="hangman.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body style="background-image: linear-gradient(to bottom right, rgb(250, 221, 90),rgb(252, 135, 1));" >
+
+    <center><h1 id="heading"><u>Han</u>gMan</h1></center>
+    <div id="main" class="col-sm-12">
+        <div class="row ">
+            <div class="col-sm-4  align-items-center"  >
+                <div class="text-center">
+                    <img id="images" src="./hangman pictures/best2.png" class="rounded" alt="...">
+                  </div>
+            </div><!--side ends-->
+
+<!------------------------------------                     LEFT side                         -->
+
+
+
+            <div class="col-sm-8" id="right">
+
+                <div class="col-sm-12 " id="text">
+                    <div class="row">
+                        <input  type="text" class="form-control col-sm-10"  placeholder="Example Guess Value"  id="ourValue">
+                        <button  onclick="input()" class="col-sm-2 btn btn-primary">DONE</button>
+                    </div>
+                </div><!--enter value -->
+
+
+                <div class="col-sm-12">
+                    <div class="col-sm-12">
+                        <div class="row justify-content-md-center" id="Dhere"></div>
+                    </div>
+
+                    <div class="col-sm-12 ">
+                        <div class="row justify-content-md-center" id="here"></div>
+                    </div>
+                 </div><!--character display -->
+
+                 <br/><br/>
+
+                <div class="coll-sm-12">
+                    <div class="row justify-content-md-center" >
+                        <button class="rounded shap col-sm-1"  onclick="Q()" id="Q">Q</button>
+                        <button class="rounded shap col-sm-1"  onclick="W()" ID="W">W</button>
+                        <button class="rounded shap col-sm-1"  onclick="E()" ID="E">E</button>
+                        <button class="rounded shap col-sm-1"  onclick="R()" ID="R">R</button>
+                        <button class="rounded shap col-sm-1"  onclick="T()" ID="T">T</button>
+                        <button class="rounded shap col-sm-1"  onclick="Y()" ID="Y">Y</button>
+                        <button class="rounded shap col-sm-1"  onclick="U()" ID="U">U</button>
+                        <button class="rounded shap col-sm-1"  onclick="I()" ID="I">I</button>
+                        <button class="rounded shap col-sm-1"  onclick="O()" ID="O">O</button>
+                        <button class="rounded shap col-sm-1"  onclick="P()" ID="P">P</button>
+                        <button class="rounded shap col-sm-1"  onclick="A()" ID="A">A</button>
+                        <button class="rounded shap col-sm-1"  onclick="S()" ID="S">S</button>
+                        <button class="rounded shap col-sm-1"  onclick="D()" ID="D">D</button>
+                        <button class="rounded shap col-sm-1"  onclick="F()" ID="F">F</button>
+                        <button class="rounded shap col-sm-1"  onclick="G()" ID="G">G</button>
+                        <button class="rounded shap col-sm-1"  onclick="H()" ID="H">H</button>
+                        <button class="rounded shap col-sm-1"  onclick="J()" ID="J">J</button>
+                        <button class="rounded shap col-sm-1"  onclick="K()" ID="K">K</button>
+                        <button class="rounded shap col-sm-1"  onclick="L()" ID="L">L</button>
+                        <button class="rounded shap col-sm-1"  onclick="Z()" ID="Z">Z</button>
+                        <button class="rounded shap col-sm-1"  onclick="X()" ID="X">X</button>
+                        <button class="rounded shap col-sm-1"  onclick="C()" ID="C">C</button>
+                        <button class="rounded shap col-sm-1"  onclick="V()" ID="V">V</button>
+                        <button class="rounded shap col-sm-1"  onclick="B()" ID="B">B</button>
+                        <button class="rounded shap col-sm-1"  onclick="N()" ID="N">N</button>
+                        <button class="rounded shap col-sm-1"  onclick="M()" ID="M">M</button>
+                     </div>
+                </div><!--character display -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="hangman.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
